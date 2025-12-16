@@ -2,7 +2,7 @@
 
 A modern, responsive landing page designed to promote a web development bootcamp. It features sections highlighting what students will learn, instructor information, and a newsletter signup, all styled with Bootstrap for a clean and professional look. The main focus is to introduce new developers to essential frontend technologies and encourage them to enroll in the program.
 
-[Click to view the website](...)
+[Click to view the website](https://adyan5786.github.io/Frontend-Bootcamp/)
 
 ## Features
 
@@ -27,4 +27,9 @@ A modern, responsive landing page designed to promote a web development bootcamp
 
 ## Screenshots
 
-...
+
+![First Image](screenshots/1.png)
+
+![Second Image](screenshots/2.png)
+
+![Third Image](screenshots/3.png)
