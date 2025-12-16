@@ -8,6 +8,11 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+
     <title>Frontend Bootcamp</title>
 </head>
 
@@ -38,7 +43,7 @@
         </div>
     </nav>
 
-    <!-- Showcase -->
+    <!-- Showcase Section -->
     <section class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start" style="background-color: lightcyan">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
@@ -55,7 +60,7 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
+    <!-- Newsletter Bar-->
     <section class="p-5" style="background-color:#e3f2fd;">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
@@ -68,7 +73,7 @@
         </div>
     </section>
 
-    <!-- Cards -->
+    <!-- Cards Section -->
     <section class="p-5 bg-light">
         <div class="container">
             <div class="row text-center g-4">
@@ -273,7 +278,8 @@
                         <div class="card-body text-center">
                             <img src="img/avatars/1.jpg" class="rounded-circle mb-3 w-50" alt="">
                             <h3 class="card-title mb-3">Tutel</h3>
-                            <p class="card-text">The Tutel. The Founding Father of the Company. Very kind loves coding but hates working.</p>
+                            <p class="card-text">The Tutel. The Founding Father of the Company. Very kind loves coding
+                                but hates working.</p>
                             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
@@ -285,7 +291,8 @@
                         <div class="card-body text-center">
                             <img src="img/avatars/2.png" class="rounded-circle mb-3 w-50" alt="">
                             <h3 class="card-title mb-3">C Tutel</h3>
-                            <p class="card-text">Cool Tutel. Wears cap because he's cool. Can do Frontend really well but sucks at Backend. Likes cookies.</p>
+                            <p class="card-text">Cool Tutel. Wears cap because he's cool. Can do Frontend really well
+                                but sucks at Backend. Likes cookies.</p>
                             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
@@ -297,7 +304,8 @@
                         <div class="card-body text-center">
                             <img src="img/avatars/3.jpg" class="rounded-circle mb-3 w-50" alt="">
                             <h3 class="card-title mb-3">D Tutel</h3>
-                            <p class="card-text">Dead Tutel. Works himself to death since The Tutel hates working. Hates garlic but good at Backend.</p>
+                            <p class="card-text">Dead Tutel. Works himself to death since The Tutel hates working. Hates
+                                garlic but good at Backend.</p>
                             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
@@ -309,7 +317,8 @@
                         <div class="card-body text-center">
                             <img src="img/avatars/4.png" class="rounded-circle mb-3 w-50" alt="">
                             <h3 class="card-title mb-3">W Tutel</h3>
-                            <p class="card-text">Wasim Tutel. Software tester. Tests software. Says Insha Allah before testing the code.</p>
+                            <p class="card-text">Wallah Tutel. Software tester. Tests software. Says Insha Allah before
+                                testing the code.</p>
                             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
@@ -317,10 +326,51 @@
                     </div>
                 </div>
 
-                <!-- Above shit reminds me of Mita from MiSide and her different versions xD -->
+                <!-- Mita and her versions -->
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="p-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 123 Freddy Fazbear St.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> (+91) 99676 76767
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> (+91) 96969 69696
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> iam@urhome.edu
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span> iranoutofjokes@sad.edu
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([47.1915, -52.8371], 16);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
